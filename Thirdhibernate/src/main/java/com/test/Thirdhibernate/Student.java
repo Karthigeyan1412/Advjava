@@ -1,4 +1,4 @@
-package com.test.Seondhibernate;
+package com.test.Thirdhibernate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -82,3 +82,4 @@ public class Student {
     
     
 }
+
