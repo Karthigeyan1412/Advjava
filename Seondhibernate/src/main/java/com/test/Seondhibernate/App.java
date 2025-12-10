@@ -12,9 +12,8 @@ public class App {
 
         
         // 1. Load Hibernate Configuration
-        Configuration cfg = new Configuration().configure("hibernate.cfg.xml");
         // 2. Create SessionFactory
-        SessionFactory factory = cfg.buildSessionFactory();
+        SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
         // 3. Open Session
         
         Session session = factory.openSession();
@@ -33,7 +32,7 @@ public class App {
 
             if (student != null) {
                 // Delete the object
-                session.delete(student);
+                session.remove(student);
                 tx.commit();
                 System.out.println("Student deleted successfully!");
             } else {
