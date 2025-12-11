@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.test</groupId>
-  <artifactId>HibernateMaven</artifactId>
+  <artifactId>Employeehibernate</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>HibernateMaven</name>
+  <name>Employeehibernate</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -15,8 +15,7 @@
   </properties>
 
   <dependencies>
-
-		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+  <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -29,17 +28,11 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.28</version>
 		</dependency>
-
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-    	<groupId>com.test</groupId>
-    	<artifactId>Employeehibernate</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>

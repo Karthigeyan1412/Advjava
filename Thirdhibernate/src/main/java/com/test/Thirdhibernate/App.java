@@ -14,10 +14,8 @@ public class App{
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
-
-        SessionFactory factory = new org.hibernate.cfg.Configuration()
-                .configure("hibernate.cfg.xml")
-                .buildSessionFactory();
+        //config hibernate and load session factory 
+        SessionFactory factory = new org.hibernate.cfg.Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 
         Session session = factory.openSession();
 
